@@ -9,6 +9,7 @@
 	<header>
 		<h1>Memory Game</h1>
 	</header>
+	
 	<nav>
 		<h3><a href="#" class="nav">Instructions</a> <a href="#" class="nav">Game</a></h3>
 	</nav>
@@ -16,18 +17,13 @@
 	<main>
 		<p class="main">Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
 		<p class="main">This is an age old game that everyone has played at one point or another in their life time. If you haven't played, this is your perfect opportunity. Give it a try! p.s. Scroll down to see the full game :)</p>	
-		<div>
-			<img src="images/back.png" alt="Card 1" title="Card">
-			<img src="images/back.png" alt="Card 2" title="Card">
-			<img src="images/back.png" alt="Card 3" title="Card">
-			<img src="images/back.png" alt="Card 4" title="Card">
-		</div>
-		<div>
-			<img src="images/back.png" alt="Card 5" title="Card">
-			<img src="images/back.png" alt="Card 6" title="Card">
-			<img src="images/back.png" alt="Card 7" title="Card">
-			<img src="images/back.png" alt="Card 8" title="Card">
-		</div>
+		<div id="game-board" class="board clearfix"></div>
+		<br/>
+		<p class="score-board">SCORE: </p><span id="points">0</span>
+		<br/>
+		<form>
+			<button id="reset" type="button" onclick="resetBoard()">SHUFFLE CARDS!</button>
+		</form>
 		<p>About the developer :) <a href="http://instagram.com/adematteo94" class="main">Check me out on Instagram! </a><a href="http://facebook.com/adematteo94" class="main">or maybe Facebook?</a></p>
 	</main>
 	<footer class="clearfix">
@@ -35,6 +31,8 @@
 		<p class="message">Created with &hearts; by <span class="name">Anthony DeMatteo</span></p>
 	</footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 <script src="js/main.js"></script>
 
 </body>
